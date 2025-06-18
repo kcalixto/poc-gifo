@@ -1,0 +1,1 @@
+(()=>{(()=>{var t="gifs";function n(){let e=document.createElement("img"),d=2;e.src=`${t}/${d}.gif`,e.alt="GIF of the day: 0",e.style.width="100%",document.body.appendChild(e)}window.onload=n})();})();

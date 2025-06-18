@@ -1,0 +1,21 @@
+{
+  "name": "poc-gifo",
+  "version": "1.0.0",
+  "description": "A simple site to display a GIF of the day using script.js",
+  "main": "server.js",
+  "scripts": {
+    "build": "esbuild script.js --bundle --minify --outfile=bundle.js",
+    "start": "npm run build && node server.js",
+    "dev": "nodemon --watch script.js --watch server.js --exec \"npm run build && node server.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gifuct-js": "^2.1.2",
+    "dotenv": "^16.1.4"
+  },
+  "devDependencies": {
+    "esbuild": "^0.18.18",
+    "nodemon": "^2.0.22"
+  }
+}
